@@ -1,0 +1,112 @@
+.content-box .comment {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 1px solid var(--title-border-color);
+}
+
+.comment-info .comment-username span {
+    text-shadow: 
+        0 0 2px var(--text-color),
+        0 0 5px var(--accent-color-2),
+        0 0 10px var(--accent-color-2);
+}
+
+.comment .comment-content {
+    margin-top: 5px;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--aero-bg);
+    box-shadow: 3px 3px 6px var(--shadow-color),
+        inset 0 0 10px var(--shadow-color);
+}
+
+.content-box .comment-form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.comment-form span {
+    text-shadow:
+        0 0 2px var(--text-color),
+        0 0 5px var(--accent-color-2),
+        0 0 10px var(--accent-color-2);
+}
+
+#c_name {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 5px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--aero-bg);
+    color: var(--text-color);
+    box-shadow: 3px 3px 6px var(--shadow-color),
+        inset 0 0 10px var(--shadow-color);
+
+}
+
+.comment-form textarea {
+    margin-top: 5px;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 5px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    width: 80%;
+    height: 10em;
+    background-color: var(--aero-bg);
+    color: var(--text-color);
+    box-shadow: 3px 3px 6px var(--shadow-color),
+        inset 0 0 10px var(--shadow-color);
+}
+
+.comment-form .btn-tray {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 60%;
+}
+
+.btn-tray .btn {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--aero-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    box-shadow: 3px 3px 6px var(--shadow-color),
+        inset 0 0 10px var(--shadow-color);
+    text-shadow:
+        0 0 2px var(--text-color),
+        0 0 5px var(--accent-color-2),
+        0 0 10px var(--accent-color-2);
+}
+
+.comment-form .btn:hover {
+    background-color: var(--accent-color-1);
+}
+
+.content-box .comment-feedback {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 1px solid var(--title-border-color);
+}
+
+.comment-feedback span {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
