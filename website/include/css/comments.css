@@ -13,6 +13,11 @@
         0 0 10px var(--accent-color-2);
 }
 
+.comment-info .comment-timestamp {
+    color: var(--muted-color);
+    font-style: italic;
+}
+
 .comment .comment-content {
     margin-top: 5px;
     margin-left: 1em;

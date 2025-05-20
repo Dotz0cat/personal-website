@@ -1,6 +1,6 @@
 <?php
 
-function retrive_comments($page) {
+function retrive_comments_native($page) {
 
     $db = new SQLite3('protected/comments.db', SQLITE3_OPEN_READONLY);
 
@@ -45,6 +45,28 @@ function print_comment($comment) {
     echo '</div>'."\n";
 }
 
+function retrive_comments($page) {
+    $db = new PDO('sqlite:protected/comments.db');
+    
+    $stmt = $db->prepare('
+        SELECT name, comment, strftime("%FT%TZ", time_posted), time_posted FROM Comments
+            WHERE page = :page
+            AND shown = 1
+            ORDER BY time_posted ASC; 
+    ');
+
+    $stmt->bindParam(':page', $page, PDO::PARAM_STR);
+
+    $stmt->execute();
+
+    while($comment = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        print_comment($comment);
+    }
+    
+    $stmt->closeCursor();
+    
+    $db = null;
+}
 
 ?>
 

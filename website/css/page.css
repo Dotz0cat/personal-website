@@ -11,6 +11,7 @@
         --accent-color-2: #A2C9FF;
         --aero-bg: rgba(255, 255, 255, 0.2);
         --shadow-color: rgba(0, 0, 0, 0.1);
+        --muted-color: #666666
     }
 }
 @media(prefers-color-scheme: dark) {
@@ -26,6 +27,7 @@
         --accent-color-2: #5A8FDC;
         --aero-bg: rgba(23, 43, 86, 0.3);
         --shadow-color: rgba(0, 0, 0, 0.3);
+        --muted-color: #888888
     }
 }
 html, body {
@@ -67,6 +69,17 @@ html, body {
         0 0 5px var(--accent-color-2),
         0 0 10px var(--accent-color-2);
     border-bottom: 1px solid var(--title-border-color);
+}
+
+.content-box .content-meta {
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+    color: var(--muted-color);
+    text-shadow: none;
+}
+
+.content-box .content-meta time {
+    font-style: italic;
 }
 
 .content-box .content-heading {

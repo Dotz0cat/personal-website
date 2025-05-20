@@ -19,8 +19,15 @@
         <div class="content-title">
 	    <h1>
 		    Stereo
-	    </h1>
-	    </div>
+        </h1>
+        <div class="content-meta">
+            <span>Published: 
+                <time datetime="2025-05-20T08:29:00Z">
+                <span>2025-05-20 08:29:00</span>
+                </time>
+            </span>
+        </div>
+        </div>
         </header>
 		
 	    <div class="content-text">
